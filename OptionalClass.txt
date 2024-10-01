@@ -1,0 +1,14 @@
+        * Optional Sınıfı Nasıl Çalışır?
+Optional bir değerin mevcut olup olmadığını kontrol etmenin bir yolunu sunar.
+Optional kullanarak bir nesne ya null olabilir ya da bir değere sahip olabilir, bu durumları güvenli bir şekilde işleyebilirsiniz.
+Optional Kullanımı
+Optional ile Değer Atama:
+
+Optional.of(T value): Değer varsa kullanılır, null kabul etmez.
+Optional.ofNullable(T value): Değer varsa kullanılır, null da olabilir.
+Optional.empty(): Boş bir Optional nesnesi oluşturur.
+* Değere Erişim:
+
+isPresent(): Optional içinde değer olup olmadığını kontrol eder.
+get(): İçindeki değeri döndürür, ancak boşsa NoSuchElementException fırlatır.
+ifPresent(Consumer<? super T> action): Eğer değer varsa belirli bir işlem yapılmasını sağlar.

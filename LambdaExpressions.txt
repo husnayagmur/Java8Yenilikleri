@@ -1,0 +1,28 @@
+LAMBDA İFADELERİ
+-Lambda ifadesi:
+*Temelde isimsiz metottur.
+*bu metot kendisini icra edemez.
+*Fonksiyonel arayüz tarafından tanımlanan metodu implemente etmek için kullanılır.
+
+-Fonksiyonel Arayüz:
+*İçerisinde sadece ve sadece bir adet soyut metot bulunduran arayüze verilen isimdir.
+*bu metot arayüzün kullanım amacını ifade eder.
+*lambda ifadelerinin hedef tipini tanımlar.
+
+Lambda ifadeleri aşağıdaki temel yapıya sahiptir:
+(parametreler) -> { gövde }
+
+Parametreler: İşlevin girdi değerleri. Parantez içinde belirtilir. Tek bir parametre varsa parantezler kullanılmayabilir.
+Ok (->): Lambda ifadesini başlatan işarettir. Parametrelerle fonksiyon gövdesi arasında yer alır.
+Gövde: Lambda ifadesinin işlevi burada tanımlanır. Bir veya daha fazla satır olabilir. Tek satırsa süslü parantez ({}) gereksizdir.
+Örnek Lambda İfadesi
+(int a, int b) -> { return a + b; }
+
+Fonksiyonel arayüz (functional interface), Java'da yalnızca bir tane soyut metoda sahip olan arayüzdür. Bu tür arayüzler, lambda ifadeleriyle birlikte kullanılabilir ve Java 8 ile birlikte tanıtılmıştır.
+@FunctionalInterface
+public interface Islemler {
+    int topla(int a, int b);  // Tek bir soyut metot
+}
+Lambda ile kullanım örneği:
+Islemler toplamaIslemi = (a, b) -> a + b;
+System.out.println(toplamaIslemi.topla(5, 3));  // 8

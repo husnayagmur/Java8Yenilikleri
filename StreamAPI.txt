@@ -1,0 +1,11 @@
+Java'da Stream API, Java 8 ile tanıtılan ve koleksiyonlar (List, Set gibi) veya diziler üzerinde işlemler yapmak için kullanılan bir API'dir. Stream API, veri işleme işlemlerini daha basit, okunabilir ve fonksiyonel bir tarzda yazmayı sağlar.
+
+Stream'ler şu şekilde çalışır:
+
+Veri kaynağı: Koleksiyonlar, diziler, dosyalar gibi veriler.
+Ara işlemler (intermediate operations): Veriyi filtreleme, sıralama, dönüştürme gibi işlemler (örn: filter(), map(), sorted()).
+Terminal işlemler (terminal operations): Stream’i sonlandıran ve sonuç üreten işlemler (örn: forEach(), collect(), count()).
+Stream API'nin temel avantajları:
+Fonksiyonel programlama: Lambda ifadeleri ile birlikte kullanılabilir.
+Veri işleme zinciri: Çok adımlı işlemler, tek bir zincir ile yapılabilir.
+Paralel işleme: Stream API, paralel veri işleme imkanı sunar (parallelStream()).
